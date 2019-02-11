@@ -4,9 +4,11 @@ import router from './router'
 // 解决部分手机点击事件延迟300毫秒问题
 import fastClick from 'fastclick'
 // 解决不同手机样式不同问题
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 解决移动端1像素边框问题， 1px的边框会显示2px
-import './assets/styles/border.css'
+import 'styles/border.css'
+// 引入iconfont
+import 'styles/iconfont.css'
 
 fastClick.attach(document.body)
 
