@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import App from './App'
 import router from './router'
 // 解决部分手机点击事件延迟300毫秒问题
@@ -9,8 +10,10 @@ import 'styles/reset.css'
 import 'styles/border.css'
 // 引入iconfont
 import 'styles/iconfont.css'
+import 'swiper/dist/css/swiper.css'
 
 fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
 
