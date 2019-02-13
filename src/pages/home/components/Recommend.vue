@@ -4,7 +4,7 @@
       热门推荐
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <div class="item-title">{{item.title}}</div>
@@ -19,24 +19,12 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-        title: '故宫',
-        desc: '德劳全面发展的亲子日，这些地方该去看看'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-        title: '故宫',
-        desc: '德劳全面发展的亲子日，这些地方该去看看'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-        title: '故宫',
-        desc: '德劳全面发展的亲子日，这些地方该去看看'
-      }]
+      
     }
   }
 }
