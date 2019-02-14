@@ -34,7 +34,7 @@ export default {
     @import '~styles/varibles.styl';
     .header
         display: flex
-        line-height: .86rem
+        line-height: $heightHigh
         background: $bgColor
         color: #fff
         .header-left
@@ -56,7 +56,7 @@ export default {
         .header-right
             width 1.24rem
             float right
-            // color #fff
+            color #fff
             text-align center
 			
 </style>
