@@ -1,10 +1,16 @@
 <template>
+
     <div class="header">
         <div class="header-left">
             <div class="iconfont back-icon">&#xe624;</div>
         </div>
         <div class="header-input"><span class="iconfont">&#xe632;</span>输入城市/景点/游玩</div>
-        <div class="header-right">{{this.city}}<span class="iconfont">&#xe612;</span></div>
+        <router-link to='/city'>
+		  <div class="header-right">
+              {{this.city}}
+              <span class="iconfont">&#xe612;</span>
+          </div>
+        </router-link>
     </div>
 </template>
 
@@ -13,6 +19,12 @@ export default {
   name: 'HomeHeader',
   props: {
       city: String
+  },
+  methods: {
+      toCity () {
+          console.log("aaaaaaaaaaaaaaa");
+          this.$router.push("/city");
+      }
   }
 }
 </script>
@@ -42,7 +54,9 @@ export default {
             padding-left .2rem
             color #cccccc
         .header-right
-            width: 1.24rem
-            float: right
+            width 1.24rem
+            float right
+            // color #fff
             text-align center
+			
 </style>
