@@ -8,7 +8,8 @@
         <router-link to='/city'>
 		  <div class="header-right">
               {{this.city}}
-              <span class="iconfont">&#xe612;</span>
+            <span class="iconfont city-iconfont">&#xe612;</span>
+
           </div>
         </router-link>
     </div>
@@ -31,7 +32,7 @@ export default {
 
 <style lang="stylus" scoped>
     // 样式中引入样式使用@import
-    @import '~styles/varibles.styl';
+    @import '~styles/varibles.styl'
     .header
         display: flex
         line-height: $heightHigh
@@ -58,5 +59,7 @@ export default {
             float right
             color #fff
             text-align center
-			
+            .city-iconfont
+                margin-left -.1rem
+                font-size .28rem
 </style>
