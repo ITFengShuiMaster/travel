@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="area">
-        <div class="title border-topbottom"><a href="#dis-B">A</a></div>
+        <div class="title border-topbottom">A</div>
         <div class="item-list">
           <div class="item">阿拉尔阿拉尔阿拉尔阿拉尔</div>
           <div class="item">阿拉尔</div>
